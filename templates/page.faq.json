@@ -1,0 +1,112 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "faq-1": {
+          "type": "question",
+          "settings": {
+            "title": "What Do I Need to Get Started on Ship My Plants?",
+            "text": "<p>You already have a passion for plants and plant related things, the rest is cake.</p><p><strong>Create a Ship My Plants Account:</strong></p><ul><li>Set up your shop's location. This is super important because we use geolocation. This way, plant buyers can make purchasing decisions that help reduce carbon emissions! It also helps you connect your business with local customers!</li><li>Build out your business' profile by telling us about you and uploading a logo and cover photo.</li><li>Set up your payment method.</li><li>Create your first listing and viola!</li></ul>"
+          }
+        },
+        "faq-2": {
+          "type": "question",
+          "settings": {
+            "title": "How Do Fees Work on Ship My Plants?",
+            "text": "<h3>Membership Fee</h3><p>Ship My Plants offers a simple seller membership option to get your businesses blooming!</p><p>Each membership grants sellers the ability to build their shop, access our NetPS Plant Database, and become part of a growing network. Pricing for the membership is as follows:</p><ul><li><strong>$10 Month or Save $20 with a $100 Annual Membership</strong></li></ul><h3>Transactional Fees</h3><p>Sellers will incur two types of fees on their order.</p><p><strong>Processing Fee</strong></p><p>The first is a processing fee. This fee will sometimes be referred to as a gateway fee. Ship My Plants utilizes Stripe to process payments - their fee is 2.9% + 30¢ of the total transaction. The total transaction refers to the product subtotal and applicable taxes and shipping.</p><p><strong>Commission Fee</strong></p><p>Ship My Plants charges a 10% fee on the final sale price of each item sold. This fee only applies to products and not applicable taxes or shipping.</p><p>Something to consider. Some sellers choose to bundle shipping costs into the price of their product. This is great for offering \"free shipping\" promotions. However, be aware that markups for shipping/handling on the retail price of your product will be included in our 10% commission fee.</p>"
+          }
+        },
+        "faq-4": {
+          "type": "question",
+          "settings": {
+            "title": "What Can I Sell on Ship My Plants?",
+            "text": "<h3>Product Offerings</h3><p>Ship My Plants is fair and open marketplace. We encourage our sellers to list products across many of our plant and plant care categories.</p><ul><li>Sellers must do their due their diligence to ensure they are not introducing invasive species and follow local jurisdictions by state.</li><li>Ship My Plants only wishes to put forth natural and organic plant care solutions. We believe plants are essential to this planet and inherently their care should also be good for the environment. Therefore we are prohibiting synthetic plant solutions.</li></ul>"
+          }
+        },
+        "question_LTmFii": {
+          "type": "question",
+          "settings": {
+            "title": "How Do Sellers Ship My Plants Get Paid?",
+            "text": "<p>Ship My Plants uses Stripe Express to process payments and fees.</p><p>Upon creating a seller account on Ship My Plants, you will need to connect your business' payment information into Stripe Express. All of your business' personal banking information is protected by Stripe.</p><p>Your payout for each individual order will not transfer to your account until the order is completed.</p><p>A transfer reversal will take place on any order which require a refund.</p>"
+          }
+        },
+        "question_AdRfjW": {
+          "type": "question",
+          "settings": {
+            "title": "What Type of Products Can I Sell on Ship My Plants?",
+            "text": "<h3>Product Categories</h3><p>Not only can you sell plants, but Ship My Plants also encourages sellers to share their plant care wares with our community. Our categories currently include:</p><ul><li>Plants, Seeds, & Bulbs</li><li>Plant Care</li><li>Indoor Growing</li><li>Lawn Care</li><li>Pottery & Containers</li><li>Garden Décor</li><li>Landscape Supply</li><li>Garden Tools & Accessories</li><li>Bird & Wildlife Supply</li></ul><h3>Product Restrictions</h3><p>Ship My Plants prioritizes organic and natural products. As a whole, we want to reduce the use of  toxic chemicals in our landscapes and products that are harmful bees or other pollinators. We are also prohibit our sellers from linking synthetically derived fertilizers to edible plants. <strong>For example products containing, Neonicotinoids, Pyrethroids, and Glyphosate are prohibited and will be removed upon discovery. </strong>Additionally rubber mulch is not an accepted product on our site due to the heavy metals and toxic chemicals that can be left behind and runoff into water systems.</p><p>Some plants may be considered invasive in particular areas. Sellers must complete their due diligence before offering plant materials unwelcome to their final destination.</p>"
+          }
+        },
+        "question_tgV3t9": {
+          "type": "question",
+          "settings": {
+            "title": "What is the NetPS Plant Database and How Do I Use It?",
+            "text": "<p><a href=\"https://www.netpsplantfinder.com/\" target=\"_blank\">NetPS Plant Database</a> is a tool known to many in the garden center industry as Net PS Plant Finder. The tool provides searchable plant information for your customers' care needs. The NetPS Plant Database has been integrated into the Ship My Plants platform. What does that mean? Gone are the hours spent keying tedious plant data into your online plant listings. With Ship My Plants, sellers can easily import plants directly into their online shop. The plant listings come equip with all of the product data, attributes and photos you may need. Sellers can go in and update any of the information to their own specs along with sku, price, and inventory.</p><p><strong>We are currently testing Plant Finder functionality and will include further use instructions upon completion.</strong></p><h3>Customization is Key</h3><p>We love NetPS Plant Database because it gives plant buyers all of the information they need about the plants you sell, this includes photos and care requirements.</p><p>However, online plant shoppers appreciate seeing the product that will arrive to their doorstep. Customizing your listings will help you differentiate your shop from other plant sellers with similar listings. Here are a few recommendations on how to do that:</p><ul><li><strong>Upload your own product photos.</strong><br/>The NetPS Plant Database image library does an amazing job of showcasing various plants at maturity or seasonal interest. Compliment those images by including additional reference photos of the products you intend to ship.</li><li><strong>Tell us more about your plants!</strong><br/>Adding your plant's own unique story of how it was cultivated and where is a nice touch to make for a unique listing.</li><li><strong>Maintain Inventory & Pricing</strong><br/>You, as the seller, are responsible for maintaining your pricing and inventory on your products. You will need to complete this information prior to publishing your listings.</li></ul>"
+          }
+        },
+        "question_d6FFYp": {
+          "type": "question",
+          "settings": {
+            "title": "What is Geolocation?",
+            "text": "<p>Ship My Plants uses geolocation to help match plant sellers with local plant buyers using zipcodes. Set your shop's location when creating your account.</p><p>This way, plant buyers can make purchasing decisions that help reduce carbon emissions! It also helps you connect your business with local customers!</p>"
+          }
+        },
+        "question_NxH7aa": {
+          "type": "question",
+          "settings": {
+            "title": "Sales & Use Tax: Who is Responsible?",
+            "text": "<p>One of the absolutely best features of Ship My Plants for our sellers is that WE as the platform calculate, collect, file, and remit the sales tax no matter where your product is coming from and where it is going inside the United States.  Our custom sales tax software takes care of all of that for you and provides peace of mind.</p><p>We've eliminated the guesswork when it comes to tax compliance. By tying in category based tax codes, your products will be appropriately assigned for state by state exemptions where applicable.</p><p>Therefore, it is important to make sure all of your products are placed in the appropriate product department or \"category\".</p><p>LLC or Sole Proprietor Sellers that did $600 or more in sales are required to fill out a W9. Corporations do not.</p>"
+          }
+        },
+        "question_nwGbpf": {
+          "type": "question",
+          "settings": {
+            "title": "How are Order Cancellations Processed?",
+            "text": "<p>In the event that an order needs to be cancelled or refunded, you as the vendor will submit a request via the seller dashboard.  Our admin team reviews these on a daily basis and pushes through the cancellation and or refund once approved.</p><p><strong>Cancelled Orders (Still in Processing)</strong></p><p>For orders which have yet to be processed due to availability or other issues - you will need to update the Order Status from Processing to Cancelled. This will notify appropriate Ship My Plants staff.</p><p><strong>Completed Orders (Label Created/Shipped)</strong></p><p>For orders which have been completed - you will need to request a refund within in the order. Choose the quantity of which item(s) require a refund. You may also decide whether or not this order should receive a full or partial refund on shipping. Once the request has been received it will be addressed by a member of Ship My Plants staff. This will include a Transfer Reversal of your Payout from your Stripe Express account.</p>"
+          }
+        },
+        "question_LnqbDR": {
+          "type": "question",
+          "settings": {
+            "title": "Do Sellers Have Access to Sales Analytics Data?",
+            "text": "<p>Each seller on Ship My Plants has their own unique dashboard complete with sales and reporting data and history.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq-1",
+        "faq-2",
+        "faq-4",
+        "question_LTmFii",
+        "question_AdRfjW",
+        "question_tgV3t9",
+        "question_d6FFYp",
+        "question_NxH7aa",
+        "question_nwGbpf",
+        "question_LnqbDR"
+      ],
+      "settings": {
+        "title": "Plant Seller FAQ"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq"
+  ]
+}

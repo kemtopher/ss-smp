@@ -1,0 +1,622 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_aDjYri": {
+      "type": "slideshow",
+      "blocks": {
+        "image_dtncTY": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "Welcome To",
+            "title": "Ship My Plants",
+            "title_size": 83,
+            "subheading": "The best online marketplace for getting plants shipped to your door!",
+            "link": "shopify://collections/all",
+            "link_text": "Shop All",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/bg_taller.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "image_dtncTY"
+      ],
+      "settings": {
+        "section_height": "750px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "ss_scrolling_logo_cloud_4iWwnd": {
+      "type": "ss-scrolling-logo-cloud",
+      "blocks": {
+        "slide_f7rPY4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/alsip.png",
+            "link": ""
+          }
+        },
+        "slide_gV3wFh": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/bargaingarden.png",
+            "link": ""
+          }
+        },
+        "slide_Hqxd4i": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/smpnew.png",
+            "link": ""
+          }
+        },
+        "slide_DBXdUf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/pbn.png",
+            "link": ""
+          }
+        },
+        "slide_qFkANy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/PW.png",
+            "link": ""
+          }
+        },
+        "slide_QeMCEd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/moss.png",
+            "link": ""
+          }
+        },
+        "slide_qEwegP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/gpfnew.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_f7rPY4",
+        "slide_gV3wFh",
+        "slide_Hqxd4i",
+        "slide_DBXdUf",
+        "slide_qFkANy",
+        "slide_QeMCEd",
+        "slide_qEwegP"
+      ],
+      "custom_css": [
+        "a {pointer-events: none;}"
+      ],
+      "settings": {
+        "ss-title": "",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "header_size": 30,
+        "header_align": "center",
+        "scrolling_velocity": 20,
+        "pause_hover": false,
+        "shadow": false,
+        "sliders_mt": 16,
+        "logo_padding_top": 16,
+        "logo_padding_bottom": 0,
+        "slider_gap": 30,
+        "slider_gap_mobile": 30,
+        "slider_direction": "left",
+        "icon_width": 100,
+        "header_color": "#121212",
+        "border_color": "#ffffff",
+        "background-color": "#fdfdfd",
+        "slider-background-color": "#ffffff",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "map": {
+      "type": "map",
+      "disabled": true,
+      "settings": {
+        "map_title": "Our retail store",
+        "address": "<p>301 Front St W<br/>Toronto, Canada</p><p>Mon - Fri, 8:30am - 10:30pm<br/>Saturday, 8:30am - 10:30pm<br/>Sunday, 8:30am - 10:30pm</p>",
+        "map_address": "301 Front St W, Toronto, ON M5V 2T6",
+        "api_key": "",
+        "show_button": true,
+        "lazyload_images": true
+      }
+    },
+    "ss_featured_collection_RBndAM": {
+      "type": "ss-featured-collection",
+      "settings": {
+        "items_mt": 40,
+        "collection": "annual-plants",
+        "product_list": [],
+        "stack_products": false,
+        "show_bar": true,
+        "top_bar": false,
+        "product_show": 20,
+        "product_per_desktop": 4,
+        "product_per_mobile": "1.3",
+        "image_radius": 12,
+        "image_ration": "square",
+        "use_custom_height": false,
+        "image_height_desktop": 400,
+        "image_height_mobile": 200,
+        "show_second": true,
+        "use_shadow": true,
+        "use_radius": true,
+        "card_padding_horizontal": 16,
+        "card_padding_vertical": 12,
+        "card_title_custom": false,
+        "card_title_font": "assistant_n4",
+        "card_title_size": 20,
+        "card_title_letter": 0,
+        "card_title_height": 100,
+        "heading": "Now Trending",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "heading_size": 30,
+        "heading_letter": 0,
+        "heading_height": 100,
+        "heading_align": "center",
+        "sub_heading": "",
+        "sub_heading_custom": false,
+        "sub_heading_font": "assistant_n4",
+        "sub_heading_size": 50,
+        "sub_heading_letter": 0,
+        "sub_heading_height": 100,
+        "sub_heading_align": "center",
+        "invert_content": false,
+        "link": "Shop Trending",
+        "link_url": "{{ section.settings.collection.url }}",
+        "link_custom": false,
+        "link_font": "assistant_n4",
+        "link_size": 18,
+        "link_letter": 0,
+        "link_height": 100,
+        "link_position": false,
+        "link_mobile": false,
+        "card_price_from": "From",
+        "card_price_custom": false,
+        "card_price_font": "assistant_n4",
+        "card_price_size": 20,
+        "card_price_letter": 0,
+        "card_price_height": 100,
+        "card_price_mt": 12,
+        "arrow_size": 50,
+        "arrow_size_mobile": 40,
+        "arrow_hide_mobile": false,
+        "link_color": "#000000",
+        "link_hover_color": "#000000",
+        "link_arrow_color": "#000000",
+        "link_background_color": "#ffffff",
+        "link_background_hover_color": "#6a9045",
+        "card_content_bg_color": "#ffffff",
+        "card_title_color": "#a87d51",
+        "card_price_color": "#6a9045",
+        "arrow_color": "#000000",
+        "arrow_hover_color": "#000000",
+        "arrow_bg_color": "#f2f2f2",
+        "arrow_bg_hover_color": "#f2f2f2",
+        "arrow_border_color": "#c4c4c4",
+        "arrow_border_hover_color": "#c4c4c4",
+        "progress_color": "#000000",
+        "heading_color": "#6a9045",
+        "sub_heading_color": "#000000",
+        "background_color": "#fbfff5",
+        "background_gradient": "",
+        "border_color": "#f3f3f3",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 130,
+        "border_thickness": 1
+      }
+    },
+    "promo_grid_T8fnYm": {
+      "type": "promo-grid",
+      "blocks": {
+        "advanced_xWEh3A": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "https://shipmyplants.sp-seller.webkul.com",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify://shop_images/2_1.png",
+            "video_url": "",
+            "width": "100",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "advanced_PwmGnr": {
+          "type": "advanced",
+          "disabled": true,
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "View Indoor Houseplants",
+            "textarea": "",
+            "cta_text1": "Shop Indoor Houseplants",
+            "cta_link1": "shopify://collections/indoor-houseplants",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify://shop_images/460158246_552185347478954_4639168228802850239_n.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "advanced_xWEh3A",
+        "advanced_PwmGnr"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true,
+        "lazyload_images": true
+      }
+    },
+    "ss_featured_collection_XHwFKK": {
+      "type": "ss-featured-collection",
+      "settings": {
+        "items_mt": 40,
+        "collection": "indoor-houseplants",
+        "product_list": [],
+        "stack_products": false,
+        "show_bar": true,
+        "top_bar": false,
+        "product_show": 20,
+        "product_per_desktop": 5,
+        "product_per_mobile": "1",
+        "image_radius": 12,
+        "image_ration": "square",
+        "use_custom_height": false,
+        "image_height_desktop": 400,
+        "image_height_mobile": 200,
+        "show_second": true,
+        "use_shadow": true,
+        "use_radius": true,
+        "card_padding_horizontal": 4,
+        "card_padding_vertical": 16,
+        "card_title_custom": false,
+        "card_title_font": "assistant_n4",
+        "card_title_size": 18,
+        "card_title_letter": 0,
+        "card_title_height": 100,
+        "heading": "Hot Houseplants",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "heading_size": 30,
+        "heading_letter": 0,
+        "heading_height": 100,
+        "heading_align": "center",
+        "sub_heading": "",
+        "sub_heading_custom": false,
+        "sub_heading_font": "assistant_n4",
+        "sub_heading_size": 50,
+        "sub_heading_letter": 0,
+        "sub_heading_height": 100,
+        "sub_heading_align": "center",
+        "invert_content": false,
+        "link": "",
+        "link_url": "",
+        "link_custom": false,
+        "link_font": "assistant_n4",
+        "link_size": 18,
+        "link_letter": 0,
+        "link_height": 100,
+        "link_position": false,
+        "link_mobile": true,
+        "card_price_from": "From",
+        "card_price_custom": false,
+        "card_price_font": "assistant_n4",
+        "card_price_size": 20,
+        "card_price_letter": 0,
+        "card_price_height": 100,
+        "card_price_mt": 12,
+        "arrow_size": 50,
+        "arrow_size_mobile": 40,
+        "arrow_hide_mobile": false,
+        "link_color": "#000000",
+        "link_hover_color": "#000000",
+        "link_arrow_color": "#000000",
+        "link_background_color": "#e6e6e6",
+        "link_background_hover_color": "#000000",
+        "card_content_bg_color": "#ffffff",
+        "card_title_color": "#a87d51",
+        "card_price_color": "#6a9045",
+        "arrow_color": "#000000",
+        "arrow_hover_color": "#000000",
+        "arrow_bg_color": "#f2f2f2",
+        "arrow_bg_hover_color": "#f2f2f2",
+        "arrow_border_color": "#c4c4c4",
+        "arrow_border_hover_color": "#c4c4c4",
+        "progress_color": "#000000",
+        "heading_color": "#6a9045",
+        "sub_heading_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 130,
+        "border_thickness": 0
+      }
+    },
+    "ss_featured_collection_FVjGEh": {
+      "type": "ss-featured-collection",
+      "settings": {
+        "items_mt": 40,
+        "collection": "plant-food-fertilizers",
+        "product_list": [],
+        "stack_products": false,
+        "show_bar": true,
+        "top_bar": false,
+        "product_show": 10,
+        "product_per_desktop": 5,
+        "product_per_mobile": "1",
+        "image_radius": 12,
+        "image_ration": "square",
+        "use_custom_height": false,
+        "image_height_desktop": 400,
+        "image_height_mobile": 200,
+        "show_second": true,
+        "use_shadow": true,
+        "use_radius": true,
+        "card_padding_horizontal": 4,
+        "card_padding_vertical": 16,
+        "card_title_custom": false,
+        "card_title_font": "assistant_n4",
+        "card_title_size": 20,
+        "card_title_letter": 0,
+        "card_title_height": 100,
+        "heading": "Garden Solutions",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "heading_size": 30,
+        "heading_letter": 0,
+        "heading_height": 100,
+        "heading_align": "center",
+        "sub_heading": "",
+        "sub_heading_custom": false,
+        "sub_heading_font": "assistant_n4",
+        "sub_heading_size": 50,
+        "sub_heading_letter": 0,
+        "sub_heading_height": 100,
+        "sub_heading_align": "center",
+        "invert_content": false,
+        "link": "View Collection",
+        "link_url": "",
+        "link_custom": false,
+        "link_font": "assistant_n4",
+        "link_size": 18,
+        "link_letter": 0,
+        "link_height": 100,
+        "link_position": false,
+        "link_mobile": true,
+        "card_price_from": "From",
+        "card_price_custom": false,
+        "card_price_font": "assistant_n4",
+        "card_price_size": 20,
+        "card_price_letter": 0,
+        "card_price_height": 100,
+        "card_price_mt": 12,
+        "arrow_size": 50,
+        "arrow_size_mobile": 40,
+        "arrow_hide_mobile": false,
+        "link_color": "#000000",
+        "link_hover_color": "#000000",
+        "link_arrow_color": "#000000",
+        "link_background_color": "#e6e6e6",
+        "link_background_hover_color": "#000000",
+        "card_content_bg_color": "#ffffff",
+        "card_title_color": "#a87d51",
+        "card_price_color": "#6a9045",
+        "arrow_color": "#000000",
+        "arrow_hover_color": "#000000",
+        "arrow_bg_color": "#f2f2f2",
+        "arrow_bg_hover_color": "#f2f2f2",
+        "arrow_border_color": "#c4c4c4",
+        "arrow_border_hover_color": "#c4c4c4",
+        "progress_color": "#000000",
+        "heading_color": "#6a9045",
+        "sub_heading_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 130,
+        "border_thickness": 0
+      }
+    },
+    "blog_posts_B8E8j6": {
+      "type": "blog-posts",
+      "custom_css": [
+        "h2 {color: #6a9045;}"
+      ],
+      "settings": {
+        "title": "Learn From Our Latest Leaflets",
+        "blog": "blog",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "blog_image_size": "wide",
+        "divider": false
+      }
+    },
+    "ss_scrolling_logo_cloud_qCa8fw": {
+      "type": "ss-scrolling-logo-cloud",
+      "blocks": {
+        "slide_rULrGR": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1_2.png",
+            "link": ""
+          }
+        },
+        "slide_tAhhcJ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Greenhouse-Grower.png",
+            "link": ""
+          }
+        },
+        "slide_Rj8U4k": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Floral-Daily.png",
+            "link": ""
+          }
+        },
+        "slide_PJWXU4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Garden-Center-Mag.png",
+            "link": ""
+          }
+        },
+        "slide_RjaMLX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Green-Profit.png",
+            "link": ""
+          }
+        },
+        "slide_ddjwgn": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Bob-Vila.png",
+            "link": ""
+          }
+        },
+        "slide_3XFFpz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/4.png",
+            "link": ""
+          }
+        },
+        "slide_c7UKmJ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Lawn-and-Garden-Retailer.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_rULrGR",
+        "slide_tAhhcJ",
+        "slide_Rj8U4k",
+        "slide_PJWXU4",
+        "slide_RjaMLX",
+        "slide_ddjwgn",
+        "slide_3XFFpz",
+        "slide_c7UKmJ"
+      ],
+      "custom_css": [
+        "a {pointer-events: none;}"
+      ],
+      "settings": {
+        "ss-title": "As Featured In",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "header_size": 30,
+        "header_align": "center",
+        "scrolling_velocity": 30,
+        "pause_hover": false,
+        "shadow": false,
+        "sliders_mt": 16,
+        "logo_padding_top": 0,
+        "logo_padding_bottom": 0,
+        "slider_gap": 30,
+        "slider_gap_mobile": 30,
+        "slider_direction": "left",
+        "icon_width": 200,
+        "header_color": "#6a9045",
+        "border_color": "#ffffff",
+        "background-color": "#ffffff",
+        "slider-background-color": "#ffffff",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    }
+  },
+  "order": [
+    "slideshow_aDjYri",
+    "ss_scrolling_logo_cloud_4iWwnd",
+    "map",
+    "ss_featured_collection_RBndAM",
+    "promo_grid_T8fnYm",
+    "ss_featured_collection_XHwFKK",
+    "ss_featured_collection_FVjGEh",
+    "blog_posts_B8E8j6",
+    "ss_scrolling_logo_cloud_qCa8fw"
+  ]
+}

@@ -1,0 +1,533 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_eMacwU": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HLDmgy": {
+          "type": "heading",
+          "settings": {
+            "title": "Why Sell on Ship My Plants?"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HLDmgy"
+      ],
+      "custom_css": [
+        "h2 {color: #6a9045;}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "ss_slideshow_7_h3HFic": {
+      "type": "ss-slideshow-7",
+      "blocks": {
+        "slide_iDUVRw": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/2_2.png",
+            "heading": "",
+            "text": "",
+            "button": "",
+            "button_url": "",
+            "first_image_url": "",
+            "second_image_url": "",
+            "third_image_url": ""
+          }
+        },
+        "slide_zpRec7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/3_1.png",
+            "heading": "",
+            "text": "",
+            "button": "",
+            "button_url": "",
+            "first_image_url": "",
+            "second_image_url": "",
+            "third_image_url": ""
+          }
+        },
+        "slide_yqhPyk": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/5_1.png",
+            "heading": "",
+            "text": "",
+            "button": "",
+            "button_url": "",
+            "first_image_url": "",
+            "second_image_url": "",
+            "third_image_url": ""
+          }
+        },
+        "slide_7NqWQF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/6.png",
+            "heading": "",
+            "text": "",
+            "button": "",
+            "button_url": "",
+            "first_image_url": "",
+            "second_image_url": "",
+            "third_image_url": ""
+          }
+        },
+        "slide_64dDLh": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/8_2.png",
+            "heading": "",
+            "text": "",
+            "button": "",
+            "button_url": "",
+            "first_image_url": "",
+            "second_image_url": "",
+            "third_image_url": ""
+          }
+        },
+        "slide_UNWDhk": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/9_1.png",
+            "heading": "",
+            "text": "",
+            "button": "",
+            "button_url": "",
+            "first_image_url": "",
+            "second_image_url": "",
+            "third_image_url": ""
+          }
+        },
+        "slide_zrYdPG": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/11_1.png",
+            "heading": "",
+            "text": "",
+            "button": "",
+            "button_url": "",
+            "first_image_url": "",
+            "second_image_url": "",
+            "third_image_url": ""
+          }
+        },
+        "slide_CFbb8f": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/12_1.png",
+            "heading": "",
+            "text": "",
+            "button": "",
+            "button_url": "",
+            "first_image_url": "",
+            "second_image_url": "",
+            "third_image_url": ""
+          }
+        },
+        "slide_qzMfNp": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/14_1.png",
+            "heading": "",
+            "text": "",
+            "button": "",
+            "button_url": "",
+            "first_image_url": "",
+            "second_image_url": "",
+            "third_image_url": ""
+          }
+        },
+        "slide_XDJE6U": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/17.png",
+            "heading": "",
+            "text": "",
+            "button": "",
+            "button_url": "",
+            "first_image_url": "",
+            "second_image_url": "",
+            "third_image_url": ""
+          }
+        },
+        "slide_K7iFkJ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/4_1.png",
+            "heading": "",
+            "text": "",
+            "button": "",
+            "button_url": "",
+            "first_image_url": "",
+            "second_image_url": "",
+            "third_image_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_iDUVRw",
+        "slide_zpRec7",
+        "slide_yqhPyk",
+        "slide_7NqWQF",
+        "slide_64dDLh",
+        "slide_UNWDhk",
+        "slide_zrYdPG",
+        "slide_CFbb8f",
+        "slide_qzMfNp",
+        "slide_XDJE6U",
+        "slide_K7iFkJ"
+      ],
+      "settings": {
+        "slideshow_height": "adapt_first",
+        "slideshow_fixed_height": 900,
+        "slideshow_fixed_height_mobile": 230,
+        "autoplay": true,
+        "autoplay_delay": 6,
+        "overlay": 0,
+        "content_padding_vertical": 0,
+        "content_padding_vertical_mobile": 40,
+        "content_padding_horizontal": 102,
+        "content_padding_horizontal_mobile": 20,
+        "content_horizontal_position_mobile": "center",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 72,
+        "heading_size_mobile": 40,
+        "heading_height": 130,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 18,
+        "text_size_mobile": 16,
+        "text_height": 150,
+        "text_mt": 24,
+        "text_mt_mobile": 20,
+        "button_custom": false,
+        "button_font": "josefin_sans_n4",
+        "button_size": 16,
+        "button_size_mobile": 15,
+        "button_height": 100,
+        "button_mt": 32,
+        "button_mt_mobile": 24,
+        "button_padding_vertical": 16,
+        "button_padding_vertical_mobile": 16,
+        "button_padding_horizontal": 32,
+        "button_padding_horizontal_mobile": 32,
+        "button_radius": 100,
+        "button_border_thickness": 1,
+        "button_style": "non_outline",
+        "image_radius": 12,
+        "image_border_thickness": 0,
+        "image_ratio": "original",
+        "image_ratio_mobile": "portrait",
+        "image_hide_mobile": true,
+        "image_hide_desktop": true,
+        "arrow_size": 48,
+        "arrow_size_mobile": 48,
+        "arrow_icon_size": 8,
+        "arrow_icon_size_mobile": 8,
+        "arrow_border_thickness": 0,
+        "arrow_radius": 100,
+        "arrow_hover_effect": "color",
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "dots_size": 14,
+        "dots_size_mobile": 14,
+        "dots_show_desktop": true,
+        "dots_show_mobile": false,
+        "pagination_custom": false,
+        "pagination_font": "josefin_sans_n4",
+        "pagination_size": 16,
+        "pagination_size_mobile": 16,
+        "pagination_height": 130,
+        "pagination_show_desktop": true,
+        "pagination_show_mobile": true,
+        "heading_color": "#FFFFFF",
+        "text_color": "#FFFFFF",
+        "image_border_color": "#000000",
+        "button_color": "#FFFFFF",
+        "button_hover_color": "#FFFFFF",
+        "button_bg_color": "#434343",
+        "button_bg_hover_color": "#232323",
+        "button_border_color": "#FFFFFF",
+        "button_border_hover_color": "#FFFFFF",
+        "arrow_color": "#FFFFFF",
+        "arrow_hover_color": "#000000",
+        "arrow_bg_color": "#232323",
+        "arrow_bg_hover_color": "#FFFFFF",
+        "arrow_border_color": "#000000",
+        "arrow_border_hover_color": "#000000",
+        "dots_color": "#6a9045",
+        "pagination_color": "#FFFFFF",
+        "overlay_color": "#000000",
+        "background_color": "#FFFFFF",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": false,
+        "content_width": 130,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "rich_text_D6WAyd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UNCCaE": {
+          "type": "heading",
+          "settings": {
+            "title": "What is Ship My Plants?"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UNCCaE"
+      ],
+      "custom_css": [
+        "h2 {color: #6a9045;}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "text_and_image_y6EnAT": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/SMP-Map-768x430.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "",
+        "text": "<p>Inspired by a lifetime love for plants and plant-related knowledge, Ship My Plants offers a uniquely innovative, fair, and open marketplace for local plant buyers and sellers alike. Our vendor-first e-commerce and data management tools create growing possibilities for Ship My Plants to be the ultimate online destination to connect plant businesses with plant purchasers near and far.</p><p>Ship My Plants is a first of it’s kind platform created by the horticulture industry, for the horticulture industry and their ever growing customer base.  Buyers will find a spot to explore and discover new plants, old favorites, and learn from the people who grew them. Sellers will find a spot to share the fruits of their labor and watch them bloom.</p><p> </p><p><strong>Our mission is to be Earth’s most plant and people-centric company!</strong></p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "left",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "rich_text_zPLtqX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_q8riKV": {
+          "type": "heading",
+          "settings": {
+            "title": "Who Buys Plants Online?"
+          }
+        },
+        "text_MmXzh4": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Many more than you would think! Here's our customer map thus far - last updated 7/8/24. We've helped sellers reach homes across ALL 50 states!<br/><em>(Yes, even Alaska & Hawaii!)</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_q8riKV",
+        "text_MmXzh4"
+      ],
+      "custom_css": [
+        "h2 {color: #6a9045;}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "divider": false
+      }
+    },
+    "advanced_content_ytkhhy": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_xP8YUf": {
+          "type": "liquid",
+          "settings": {
+            "code": "<iframe src=\"https://www.google.com/maps/d/embed?mid=1yU-F1Kv-zbQ0a9NfGSK-2Pfyfhmv0M8&amp;ehbc=2E312F&amp;noprof=1\" width=\"100%\" height=\"480\"></iframe>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_xP8YUf"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "rich_text_W9XJXm": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hgVjqc": {
+          "type": "heading",
+          "settings": {
+            "title": "Why Sell on Ship My Plants?"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hgVjqc"
+      ],
+      "custom_css": [
+        "h2 {color: #6a9045;}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "text_and_image_VxDGFF": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/SMP-Banner-768x357.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "",
+        "text": "<p>The future of retail is omni-channel marketplaces. Ship My Plants will be the go-to platform for our industry’s niches and this is where your customers will be looking for their future plant purchases! We’re creating a wildly plant-loving, seller-supporting, eco-friendly fanbase that won’t think twice about spending their free time perusing the latest offerings on Ship My Plants from their favorite sellers.</p><p> </p><p>We understand that growing on a new platform can be tricky and time consuming as the first time you ever dropped a seed in dirt. We give all sellers the tools and resources they need to thrive on our platform.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "left",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "rich_text_QQwhPw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_pn7Am7": {
+          "type": "heading",
+          "settings": {
+            "title": "What Can You Sell on Ship My Plants?"
+          }
+        },
+        "text_WwLmEz": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Ship My Plants is fair and open marketplace. We encourage our sellers to list products across many of our plant and plant care categories.</p><ul><li>Ship My Plants prioritizes organic and natural products. As a whole, we want to reduce the use of  toxic chemicals in our landscapes and products that are harmful to bees or other pollinators. We also prohibit our sellers from linking synthetically derived fertilizers to edible plants. <strong>For example products containing, Neonicotinoids, Pyrethroids, and Glyphosate are prohibited and will be removed upon discovery. </strong>Additionally rubber mulch is not an accepted product on our site due to the heavy metals and toxic chemicals that can be left behind and runoff into water systems.</li><li>Some plants may be considered invasive in particular areas. Sellers must complete their due diligence before offering plant materials unwelcome to their final destination.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pn7Am7",
+        "text_WwLmEz"
+      ],
+      "custom_css": [
+        "h2 {color: #6a9045;}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "divider": false
+      }
+    },
+    "advanced_content_wbFdnW": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_zHNihE": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2 style=color:#6a9045;text-align:center;>How Ship My Plants Compares to the Other Guys</h2>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "image_NBEYA7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SMP-Marketplace-Comparisons.png",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_zHNihE",
+        "image_NBEYA7"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "rich_text_rFFK3A": {
+      "type": "rich-text",
+      "blocks": {
+        "button_NqcLt6": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "Become A Seller Today"
+          }
+        }
+      },
+      "block_order": [
+        "button_NqcLt6"
+      ],
+      "custom_css": [],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_eMacwU",
+    "ss_slideshow_7_h3HFic",
+    "rich_text_D6WAyd",
+    "text_and_image_y6EnAT",
+    "rich_text_zPLtqX",
+    "advanced_content_ytkhhy",
+    "rich_text_W9XJXm",
+    "text_and_image_VxDGFF",
+    "rich_text_QQwhPw",
+    "advanced_content_wbFdnW",
+    "rich_text_rFFK3A"
+  ]
+}

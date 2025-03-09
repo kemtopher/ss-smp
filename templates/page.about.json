@@ -1,0 +1,186 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "About Ship My Plants"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ],
+      "custom_css": [
+        "h2 {color: #6a9045;}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "text_and_image_tYQfe9": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/SMP-Team-Illustration.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "",
+        "text": "<h3></h3><h2>Dear Fellow Plant Lovers, we’re unbe-leaf-ably happy you’re here!</h2><p>Before, there wasn't that one, go to place that plant and garden enthusiasts could go and find just about anything they were looking for all in one place… until now!</p><p>Inspired by a lifetime love for plants and plant-related knowledge, Ship My Plants offers a uniquely innovative, fair, and open marketplace for local plant buyers and sellers alike. Our vendor-first e-commerce and data management tools create growing possibilities for Ship My Plants to be the ultimate online destination to connect plant businesses with plant purchasers near and far.</p><p><strong>We're so excited to grow this community with all of you!</strong></p><p><em>- The Team at ShipMyPlants.com</em></p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "rich_text_kJGTJj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Lx7nnn": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Mission"
+          }
+        },
+        "text_cMWK3r": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Our mission is to be Earth’s most plant and people-centric company, and to create a fair and open marketplace for people who love plants. Buyers will find a spot to explore and discover new plants, old favorites, and learn from the people who grew them. Sellers will find a spot to share the fruits of their labor and watch them bloom.</p><p>Additionally, we believe in uncompromised quality and hold our sellers to the highest of standards. We prioritize education & resources to buyers and sellers alike. We are plant people and knowledge is the key to the offerings found on Ship My Plants.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Lx7nnn",
+        "text_cMWK3r"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "rich_text_MiURUN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_iMrpFk": {
+          "type": "heading",
+          "settings": {
+            "title": "History"
+          }
+        },
+        "text_n38Bc9": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>For over 5 decades and two generations the founders of Ship My Plants have belonged to the garden center industry -  from plant production to brick and mortar retail, and most recently, the online selling experience. Like most in the plant industry, you will find family owned companies with generations of experience in cultivating plants and relationships with those who purchase them. And while all of these plant enthusiasts are pros at tending the landscape -  the world of e-commerce is all new terrain.</p><p>After many years of selling plants online on different one size fits all platforms, and seeing the need for a mutually beneficial marketplace for both plant sellers and plant buyers alike, the vision of Ship My Plants was born.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_iMrpFk",
+        "text_n38Bc9"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "advanced_content_iQLFrc": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_FYF6Nx": {
+          "type": "liquid",
+          "settings": {
+            "code": "<br style=\"margin-top:-10px;\">",
+            "width": "25%",
+            "alignment": "center"
+          }
+        },
+        "image_8pytiQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/smp-what-we-do-desktop.jpg",
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_FYF6Nx",
+        "image_8pytiQ"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "advanced_content_a9wLeT": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_rgUr9E": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Awards - The PNW Big Sell 2022</h2><p>In 2022, Ship My Plants was named the winners of The PNW Big Sell. As part of this \"shark-tank\" like competition, entrepreneurs were given the opportunity to pitch their business idea to a panel of local judges.\n\nPurdue University Northwest’s (PNW) College of Business and College of Technology hosted 12 finalists on April 30 during the 11th annual PNW Big Sell pitch competition, sponsored by the Northern Indiana Public Service Company (NIPSCO), where the top three winners were announced.\n<br>\nRichard Christakes [founder] was awarded first place and $10,000 for his business, Ship My Plants, which matches plant enthusiasts with the closest possible sellers based on geolocation. The business model is intended to minimize stress on plants, save shipping time and costs and reduce carbon emissions.</p>",
+            "width": "66%",
+            "alignment": "center"
+          }
+        },
+        "image_JzKipd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TheBigSell2022-3.jpg",
+            "link": "",
+            "width": "33%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_rgUr9E",
+        "image_JzKipd"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich-text",
+    "text_and_image_tYQfe9",
+    "rich_text_kJGTJj",
+    "rich_text_MiURUN",
+    "advanced_content_iQLFrc",
+    "advanced_content_a9wLeT"
+  ]
+}

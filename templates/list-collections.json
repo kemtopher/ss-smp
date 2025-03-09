@@ -1,0 +1,235 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "list-collections-template",
+      "blocks": {
+        "collection_PzGBC3": {
+          "type": "collection",
+          "settings": {
+            "collection": "woo_importer_product-plant_type-shrub"
+          }
+        },
+        "collection_3q4qxD": {
+          "type": "collection",
+          "settings": {
+            "collection": "woo_importer_product-plant_type-perennial"
+          }
+        },
+        "collection_9xCgKP": {
+          "type": "collection",
+          "settings": {
+            "collection": "indoor-houseplants"
+          }
+        },
+        "collection_hpLH7i": {
+          "type": "collection",
+          "settings": {
+            "collection": "woo_importer_product-plant_type-ornamental-grass"
+          }
+        },
+        "collection_PDPKAG": {
+          "type": "collection",
+          "settings": {
+            "collection": "evergreen-trees"
+          }
+        },
+        "collection_Az6bDN": {
+          "type": "collection",
+          "settings": {
+            "collection": "seeds-bulbs"
+          }
+        },
+        "collection_eTgdp6": {
+          "type": "collection",
+          "settings": {
+            "collection": "annual-plants"
+          }
+        },
+        "collection_YMKzVj": {
+          "type": "collection",
+          "settings": {
+            "collection": "succulents-cactus"
+          }
+        },
+        "collection_nGwxDt": {
+          "type": "collection",
+          "settings": {
+            "collection": "woo_importer_product-variety-tropical-hibiscus"
+          }
+        },
+        "collection_PDnXBw": {
+          "type": "collection",
+          "settings": {
+            "collection": "edible-garden-plants"
+          }
+        },
+        "collection_AAeMaD": {
+          "type": "collection",
+          "settings": {
+            "collection": "soils-amendments"
+          }
+        },
+        "collection_8aAKHV": {
+          "type": "collection",
+          "settings": {
+            "collection": "plant-food-fertilizers"
+          }
+        }
+      },
+      "block_order": [
+        "collection_PzGBC3",
+        "collection_3q4qxD",
+        "collection_9xCgKP",
+        "collection_hpLH7i",
+        "collection_PDPKAG",
+        "collection_Az6bDN",
+        "collection_eTgdp6",
+        "collection_YMKzVj",
+        "collection_nGwxDt",
+        "collection_PDnXBw",
+        "collection_AAeMaD",
+        "collection_8aAKHV"
+      ],
+      "settings": {
+        "title_enable": true,
+        "display_type": "selected",
+        "sort": "alphabetical",
+        "grid": "4"
+      }
+    },
+    "featured_collections_TLA49c": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_e9bYLW": {
+          "type": "collection",
+          "settings": {
+            "collection": "soils-amendments",
+            "title": "",
+            "focal_point": "top center"
+          }
+        },
+        "collection_Y3emb7": {
+          "type": "collection",
+          "settings": {
+            "collection": "garden-tools",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection_BAFjNP": {
+          "type": "collection",
+          "settings": {
+            "collection": "plant-food-fertilizers",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection_F6dTD3": {
+          "type": "collection",
+          "settings": {
+            "collection": "plant-pest-control",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection_dizP9y": {
+          "type": "collection",
+          "settings": {
+            "collection": "lawn-care",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection_yfEE6R": {
+          "type": "collection",
+          "settings": {
+            "collection": "growing-additives",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection_MX9QdB": {
+          "type": "collection",
+          "settings": {
+            "collection": "plant-containers-displays",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection_MWENPd": {
+          "type": "collection",
+          "settings": {
+            "collection": "plant-monitors-sensors",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection_taAdJF": {
+          "type": "collection",
+          "settings": {
+            "collection": "soil-testers",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection_b7hcJN": {
+          "type": "collection",
+          "settings": {
+            "collection": "plant-supports",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection_iTkkCK": {
+          "type": "collection",
+          "settings": {
+            "collection": "plant-fungicides-disease-control",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection_49qM6p": {
+          "type": "collection",
+          "settings": {
+            "collection": "frost-protection",
+            "title": "",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "collection_e9bYLW",
+        "collection_Y3emb7",
+        "collection_BAFjNP",
+        "collection_F6dTD3",
+        "collection_dizP9y",
+        "collection_yfEE6R",
+        "collection_MX9QdB",
+        "collection_MWENPd",
+        "collection_taAdJF",
+        "collection_b7hcJN",
+        "collection_iTkkCK",
+        "collection_49qM6p"
+      ],
+      "settings": {
+        "title": "Shop Plant Care",
+        "divider": false,
+        "per_row": 4,
+        "enable_gutter": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featured_collections_TLA49c"
+  ]
+}

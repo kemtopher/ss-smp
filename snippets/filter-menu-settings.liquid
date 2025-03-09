@@ -1,0 +1,10 @@
+{%- comment -%}This contains the sectional settings for the Filter Menu. {%- endcomment -%}
+{%- unless settings.pt_temporary_disable -%}
+{%- if template contains 'collection' or settings.pt_show_only_on_collections != true -%}
+{{ 'filter-menu.css' | asset_url | stylesheet_tag }}
+{{ 'filter-menu.js' | asset_url | script_tag }}
+{% if settings.pt_ajax_enable %}
+<script src="{{ 'pt-pjax.js' | asset_url }}" defer="defer"></script>
+{% endif %}
+{% endif %}
+{% endunless %}

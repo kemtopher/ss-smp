@@ -1,0 +1,293 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_htN9Nj": {
+          "type": "custom",
+          "settings": {
+            "code": "<div class=\"wk_seller_store_logo\" data-productid =\"{{product.id}}\"></div><div class=\"wk_seller_detail clearfix\" data-productid =\"{{product.id}}\" style=\"display:none;\"></div><div class='wk-rateit'></div>"
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 9900,
+            "inventory_transfers_enable": false
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "text_DATeDd": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Moisture: {{ product.metafields.woo_importer_product.moisture.value }} Fragrant? {{ product.metafields.woo_importer_product.fragrant.value }}Container Size: {{ product.metafields.woo_importer_product.plant_container_size.value }}Salt Tolerant? {{ product.metafields.woo_importer_product.salt_tolerant.value }} Sunlight:{{ product.metafields.woo_importer_product.sunlight.value }} Flower Color: {{ product.metafields.woo_importer_product.flower_color.value }}"
+          }
+        },
+        "custom_QftzGN": {
+          "type": "custom",
+          "settings": {
+            "code": "<div style={% if product.metafields.woo_importer_product.plant_type.value  == blank %}\"display: none;\"{% endif %}>\n\n<b>Moisture: </b>{{ product.metafields.woo_importer_product.moisture.value }}<br> <b>Sunlight: </b>{{ product.metafields.woo_importer_product.sunlight.value }} <br><b>Hardiness Zone Rating: </b>{{ product.metafields.woo_importer_product.hardiness_zone_rating.value }} <br><b>Plant Height:</b> {{ product.metafields.woo_importer_product.plant_height_description.value }} <br> <b>Plant Spread:</b> {{ product.metafields.woo_importer_product.plant_spread_description.value }} <br><b> Variety:</b> {{ product.metafields.woo_importer_product.variety.value }}<br></div>"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "tab_6aWgKt": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Short Description",
+            "content": "<p><strong>Type:</strong> {{ product.metafields.woo_importer_product.plant_type.value }}</p><p><strong>Moisture:</strong> {{ product.metafields.woo_importer_product.moisture.value }}</p><p><strong>Container Size: </strong>{{ product.metafields.woo_importer_product.plant_container_size.value }}</p><p><strong>Foliage Color: </strong>{{ product.metafields.woo_importer_product.foliage_color.value }}</p><p><strong>Hardiness Zone:</strong> {{ product.metafields.woo_importer_product.hardiness_zone_range.value }}</p>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Shipping information",
+            "content": "<p>We only ship in the <strong>United States.</strong></p><p>Shipping States: <strong>Kansas (United States (US)), West Virginia (United States (US)), Arizona (United States (US)), Ohio (United States (US)), Michigan (United States (US)), South Dakota (United States (US)), District Of Columbia (United States (US)), Nevada (United States (US)), Iowa (United States (US)), Washington (United States (US)), Alabama (United States (US)), North Dakota (United States (US)), Massachusetts (United States (US)), South Carolina (United States (US)), Delaware (United States (US)), Nebraska (United States (US)), Indiana (United States (US)), Virginia (United States (US)), North Carolina (United States (US)), Maryland (United States (US)), Rhode Island (United States (US)), Connecticut (United States (US)), Montana (United States (US)), Illinois (United States (US)), Vermont (United States (US)), New York (United States (US)), Maine (United States (US)), Pennsylvania (United States (US)), Colorado (United States (US)), Missouri (United States (US)), Idaho (United States (US)), Utah (United States (US)), New Mexico (United States (US)), Louisiana (United States (US)), Wyoming (United States (US)), Oregon (United States (US)), California (United States (US)), Mississippi (United States (US)), Georgia (United States (US)), Texas (United States (US)), New Jersey (United States (US)), Kentucky (United States (US)), Wisconsin (United States (US)), Oklahoma (United States (US)), Arkansas (United States (US)), Minnesota (United States (US)), Florida (United States (US)), Tennessee (United States (US)), New Hampshire (United States (US))</strong></p>",
+            "page": ""
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "disabled": true,
+          "settings": {
+            "title": "Ask a question",
+            "phone": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "price",
+        "custom_htN9Nj",
+        "inventory_status",
+        "separator",
+        "variant_picker",
+        "buy_buttons",
+        "text_DATeDd",
+        "custom_QftzGN",
+        "description",
+        "tab_6aWgKt",
+        "tab",
+        "contact",
+        "share"
+      ],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "below",
+        "thumbnail_height": "flexible",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "ss_tabs_BqQ8dG": {
+      "type": "ss-tabs",
+      "blocks": {
+        "tab_gjGzfH": {
+          "type": "tab",
+          "settings": {
+            "title": "Description",
+            "product_description": true,
+            "content": "",
+            "page_content": "",
+            "show_page_title": false,
+            "page_title_html_element": "h2"
+          }
+        },
+        "tab_4ibAcz": {
+          "type": "tab",
+          "settings": {
+            "title": "Other Attributes",
+            "product_description": false,
+            "content": "<div style={% if product.metafields.woo_importer_product.plant_type.value  == blank %}\"display: none;\"{% endif %}>\n\n<b>Native?</b> {{ product.metafields.woo_importer_product.native.value }}<br><b>Container Role:</b> {{ product.metafields.woo_importer_product.container_role.value }}<br><b>Deer Resistant?</b> {{ product.metafields.woo_importer_product.deer_resistant.value }}<br><b>Drought Tolerant?</b> {{ product.metafields.woo_importer_product.drought_tolerant.value }}<br><b>Flower Color:</b> {{ product.metafields.woo_importer_product.flower_color.value }}<br> <b>Fall Color:</b> {{ product.metafields.woo_importer_product.fall_color.value }}<br><b>Hardiness Zone:</b> {{ product.metafields.woo_importer_product.hardiness_zone_range.value }}<br><b>Low Maintenance?</b> {{ product.metafields.woo_importer_product.low_maintenance.value }}\n<br> <b>Moisture:</b> {{ product.metafields.woo_importer_product.moisture.value }} <br> <b>Fragrant?</b> {{ product.metafields.woo_importer_product.fragrant.value }}<br> <b>Container Size:</b> {{ product.metafields.woo_importer_product.plant_container_size.value }}<br> <b>Salt Tolerant?</b> {{ product.metafields.woo_importer_product.salt_tolerant.value }} <br> <b>Sunlight:</b> {{ product.metafields.woo_importer_product.sunlight.value }} </div>",
+            "page_content": "",
+            "show_page_title": false,
+            "page_title_html_element": "h2"
+          }
+        },
+        "tab_VwLtEN": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping Information",
+            "product_description": false,
+            "content": "<p>We only ship in the <strong>United States.</strong></p><p>Shipping States: Kansas (United States (US)), West Virginia (United States (US)), Arizona (United States (US)), Ohio (United States (US)), Michigan (United States (US)), South Dakota (United States (US)), District Of Columbia (United States (US)), Nevada (United States (US)), Iowa (United States (US)), Washington (United States (US)), Alabama (United States (US)), North Dakota (United States (US)), Massachusetts (United States (US)), South Carolina (United States (US)), Delaware (United States (US)), Nebraska (United States (US)), Indiana (United States (US)), Virginia (United States (US)), North Carolina (United States (US)), Maryland (United States (US)), Rhode Island (United States (US)), Connecticut (United States (US)), Montana (United States (US)), Illinois (United States (US)), Vermont (United States (US)), New York (United States (US)), Maine (United States (US)), Pennsylvania (United States (US)), Colorado (United States (US)), Missouri (United States (US)), Idaho (United States (US)), Utah (United States (US)), New Mexico (United States (US)), Louisiana (United States (US)), Wyoming (United States (US)), Oregon (United States (US)), California (United States (US)), Mississippi (United States (US)), Georgia (United States (US)), Texas (United States (US)), New Jersey (United States (US)), Kentucky (United States (US)), Wisconsin (United States (US)), Oklahoma (United States (US)), Arkansas (United States (US)), Minnesota (United States (US)), Florida (United States (US)), Tennessee (United States (US)), New Hampshire (United States (US))</p>",
+            "page_content": "",
+            "show_page_title": false,
+            "page_title_html_element": "h2"
+          }
+        },
+        "tab_Crm96t": {
+          "type": "tab",
+          "settings": {
+            "title": "Seller Info",
+            "product_description": false,
+            "content": "<div class=\"wk_seller_store_logo\" data-productid =\"{{product.id}}\"></div><div class=\"wk_seller_detail clearfix\" data-productid =\"{{product.id}}\" style=\"display:none;\"></div><div class='wk-rateit'></div>",
+            "page_content": "",
+            "show_page_title": false,
+            "page_title_html_element": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "tab_gjGzfH",
+        "tab_4ibAcz",
+        "tab_VwLtEN",
+        "tab_Crm96t"
+      ],
+      "settings": {
+        "section_class": "",
+        "background-color": "#ffffff",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 36,
+        "padding_horizontal_desktop": 50,
+        "margin_top_desktop": 12,
+        "margin_bottom_desktop": 16,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 15,
+        "margin_top": 36,
+        "margin_bottom": 36,
+        "section-width": 100,
+        "section_title": "",
+        "section_title_html_element": "h2",
+        "section_title_text_align_desktop": "center",
+        "section_title_color": "#000000",
+        "section_title_font_weight": "inherit",
+        "section_title_font_size_desktop": 0,
+        "section_title_line_height_desktop": 0,
+        "section_title_letter_spacing_desktop": 0,
+        "section_title_margin_top_desktop": 36,
+        "section_title_margin_bottom_desktop": 36,
+        "section_title_text_align": "center",
+        "section_title_line_height": 0,
+        "section_title_letter_spacing": 0,
+        "section_title_margin_top": 36,
+        "section_title_margin_bottom": 24,
+        "section_tab_title_font_weight": "inherit",
+        "tab_style": "with-border",
+        "tab_border_width": 1,
+        "tab_border_radius": 0,
+        "tab_border_color": "#6a9045",
+        "tab_background_color": "#ffffff",
+        "tab_text_color": "#000000",
+        "tab_active_hover_background_color": "#6a9045",
+        "tab_active_state_selector": "background_color",
+        "tab_active_title_color": "#ffffff",
+        "tag_alignment": "fullwidth",
+        "tab_padding_vertical_desktop": 14,
+        "tab_padding_horizontal_desktop": 14,
+        "tab_gap_desktop": 10,
+        "tab_title_font_size_desktop": 0,
+        "tab_title_line_height_desktop": 0,
+        "tab_title_letter_spacing_desktop": 0,
+        "tab_padding_vertical": 12,
+        "tab_padding_horizontal": 12,
+        "tab_gap": 6,
+        "tab_title_line_height": 0,
+        "tab_title_letter_spacing": 0,
+        "content_background_color": "#fdfdfd",
+        "content_border_color": "#000000",
+        "content_border_width": 0,
+        "content_border_radius": 0,
+        "content_padding_top_desktop": 20,
+        "content_padding_horizontal_desktop": 20,
+        "content_padding_bottom_desktop": 20,
+        "content_padding_horizontal": 20,
+        "content_padding_top": 20,
+        "content_padding_bottom": 20,
+        "content_text_align_desktop": "left",
+        "content_text_color": "#000000",
+        "content_text_font_weight": "inherit",
+        "content_text_font_size_desktop": 0,
+        "content_text_line_height_desktop": 0,
+        "content_text_letter_spacing_desktop": 0,
+        "content_text_align": "left",
+        "content_text_line_height": 0,
+        "content_text_letter_spacing": 0,
+        "content_link_color": "#000000",
+        "content_link_underline": false
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 5,
+        "products_per_row": 5
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "recent_count": 5
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "ss_tabs_BqQ8dG",
+    "sub",
+    "product-recommendations",
+    "recently-viewed",
+    "collection-return"
+  ]
+}

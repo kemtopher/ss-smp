@@ -1,0 +1,260 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "advanced_content_MKDqUr": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_8GyyCD": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2 style=\"text-align:center;\">About Ship My Plants Seller Memberships</h2><p style=\"text-align:center;\">Join our growing Ship My Plants marketplace. Start by choosing one of our three seller membership tiers. Each membership grants sellers the ability to list a specified number of products. We also offer monthly and annually paid memberships to fit your needs. All sellers on the Ship My Plants marketplace receive access to our robust e-commerce platform which includes updates, support, and tools for growing possibilities.</p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_8GyyCD"
+      ],
+      "custom_css": [
+        "h2 {color: #6c9149;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "ss_pricing_table_3_QMxDWc": {
+      "type": "ss-pricing-table-3",
+      "blocks": {
+        "item_RbF3PP": {
+          "type": "item",
+          "settings": {
+            "budges": "",
+            "image": "shopify://shop_images/7_1.png",
+            "heading": "Green Thumb",
+            "price_sale": "",
+            "price": "150",
+            "currency": "$",
+            "time": "Annually",
+            "elements": "<p><strong>Up to 25 Product Listings</strong></p><p><strong>An Excellent Solution For:</strong></p><ul><li>Home Growers</li><li>Propagators</li><li>Florists</li><li>Plant Wares</li><li>Sellers New to Shipping</li></ul><p><strong>Transform your budding interests into a blooming online business.</strong></p>",
+            "button_text": "Become a Green Thumb",
+            "button_url": "https://shipmyplants.myshopify.com/collections/memberships",
+            "Text": "",
+            "active": false
+          }
+        },
+        "item_87xNgw": {
+          "type": "item",
+          "settings": {
+            "budges": "Most Popular",
+            "image": "shopify://shop_images/8_1.png",
+            "heading": "BASIC",
+            "price_sale": "",
+            "price": "300",
+            "currency": "$",
+            "time": "Annually",
+            "elements": "<p><strong>Up to 50 Product Listings</strong></p><p><strong>An Excellent Solution For:</strong></p><ul><li>Greenhouses</li><li>Small to Mid Size Garden Centers</li><li>Florists & Farmer's Markets</li><li>Plant Wares</li><li>Sellers Familiar to Shipping</li></ul><p><strong>Expand your reach without extending your resources.</strong></p>",
+            "button_text": "Become a Green Guru",
+            "button_url": "https://shipmyplants.myshopify.com/collections/memberships",
+            "Text": "",
+            "active": true
+          }
+        },
+        "item_Mqerd9": {
+          "type": "item",
+          "settings": {
+            "budges": "Best Value",
+            "image": "shopify://shop_images/9.png",
+            "heading": "PREMIUM",
+            "price_sale": "",
+            "price": "600",
+            "currency": "$",
+            "time": "Annually",
+            "elements": "<p><strong>Up to 100 Product Listings</strong></p><p><strong>An Excellent Solution For:</strong></p><ul><li>Wholesale Growers</li><li>Multi-Branch Garden Centers</li><li>Florists & Supermarkets</li><li>Plant Wares</li><li>Sellers Comfortable with Shipping</li></ul><p><strong>Expand your field expertise and branch out to greener pastures!</strong></p>",
+            "button_text": "Become a Green Giant",
+            "button_url": "https://shipmyplants.myshopify.com/collections/memberships",
+            "Text": "",
+            "active": false
+          }
+        }
+      },
+      "block_order": [
+        "item_RbF3PP",
+        "item_87xNgw",
+        "item_Mqerd9"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 32,
+        "heading_size_mobile": 24,
+        "heading_height": 130,
+        "heading_align": "center",
+        "sub_heading": "",
+        "sub_heading_custom": false,
+        "sub_heading_font": "josefin_sans_n4",
+        "sub_heading_size": 24,
+        "sub_heading_size_mobile": 18,
+        "sub_heading_height": 130,
+        "sub_heading_align": "center",
+        "sub_heading_mt": 10,
+        "sub_heading_border": true,
+        "table_mt": 0,
+        "table_width": 90,
+        "table_width_mobile": 100,
+        "table_gap": 20,
+        "table_gap_mobile": 20,
+        "card_padding_vertical": 32,
+        "card_padding_horizontal": 32,
+        "card_radius": 26,
+        "card_border_thickness": 1,
+        "card_shadow": true,
+        "budges_custom": false,
+        "budges_font": "josefin_sans_n4",
+        "budges_size": 12,
+        "budges_size_mobile": 12,
+        "budges_height": 100,
+        "budges_padding_vertical": 12,
+        "budges_padding_horizontal": 20,
+        "budges_radius": 20,
+        "budges_border_thickness": 1,
+        "budges_weight": "bold",
+        "budges_top": true,
+        "image_width": 35,
+        "image_width_mobile": 60,
+        "image_mt": 10,
+        "image_radius": 8,
+        "image_border_thickness": 0,
+        "title_custom": false,
+        "title_font": "josefin_sans_n4",
+        "title_size": 24,
+        "title_size_mobile": 18,
+        "title_height": 130,
+        "title_align": "center",
+        "title_mt": 10,
+        "price_custom": false,
+        "price_font": "josefin_sans_n4",
+        "price_size": 72,
+        "price_size_mobile": 72,
+        "price_sale_size": 24,
+        "price_sale_size_mobile": 24,
+        "price_height": 130,
+        "price_align": "center",
+        "price_mt": 10,
+        "price_time_under": true,
+        "elements_custom": false,
+        "elements_font": "josefin_sans_n4",
+        "elements_size": 14,
+        "elements_size_mobile": 12,
+        "elements_height": 130,
+        "elements_align": "center",
+        "elements_position": "before",
+        "elements_mt": 38,
+        "elements_gap": 16,
+        "icon_size": 20,
+        "button_custom": false,
+        "button_font": "josefin_sans_n4",
+        "button_size": 16,
+        "button_size_mobile": 14,
+        "button_height": 130,
+        "button_align": "center",
+        "button_mt": 16,
+        "button_padding_vertical": 12,
+        "button_padding_horizontal": 20,
+        "button_radius": 20,
+        "button_border_thickness": 0,
+        "button_width": 100,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 14,
+        "text_size_mobile": 14,
+        "text_height": 130,
+        "text_align": "center",
+        "text_mt": 16,
+        "heading_color": "#000000",
+        "heading_other_color": "#000000",
+        "sub_heading_color": "#000000",
+        "sub_heading_border_color": "#000000",
+        "card_bg_color": "#ffffff",
+        "card_bg_active_color": "#ffffff",
+        "card_border_color": "#f3f3f3",
+        "card_border_active_color": "#dddddd",
+        "budges_color": "#545a69",
+        "budges_active_color": "#545a69",
+        "budges_second_color": "#ca73e0",
+        "budges_second_active_color": "#38a9f3",
+        "budges_bg_color": "#ffffff",
+        "budges_bg_active_color": "#ffffff",
+        "budges_bg_second_color": "#ffffff",
+        "budges_bg_second_active_color": "#ffffff",
+        "budges_border_color": "#f3f3f3",
+        "budges_border_active_color": "#dddddd",
+        "budges_border_second_color": "#f3f3f3",
+        "budges_border_second_active_color": "#dddddd",
+        "image_bg_color": "#ffffff",
+        "image_bg_active_color": "#dddddd",
+        "image_border_color": "#ffffff",
+        "image_border_active_color": "#ffffff",
+        "title_color": "#9c9898",
+        "title_active_color": "#9c9898",
+        "price_color": "#000000",
+        "price_color_gradient": "",
+        "price_active_color": "#1d6bff",
+        "price_active_color_gradient": "",
+        "elements_color": "#000000",
+        "elements_active_color": "#000000",
+        "button_color": "#ffffff",
+        "button_hover_color": "#ffffff",
+        "button_active_color": "#ffffff",
+        "button_active_hover_color": "#ffffff",
+        "button_bg_color": "#000000",
+        "button_bg_color_gradient": "",
+        "button_bg_hover_color": "#425466",
+        "button_bg_hover_color_gradient": "",
+        "button_bg_active_color": "#1d6bff",
+        "button_bg_active_color_gradient": "",
+        "button_bg_active_hover_color": "#1d6bff",
+        "button_bg_active_hover_color_gradient": "",
+        "button_border_color": "#425466",
+        "button_border_hover_color": "#425466",
+        "button_border_active_color": "#38a9f3",
+        "button_border_active_hover_color": "#425466",
+        "text_color": "#1a1a1a",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "advanced_content_MKDqUr",
+    "ss_pricing_table_3_QMxDWc"
+  ]
+}

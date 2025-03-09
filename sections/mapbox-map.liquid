@@ -1,0 +1,75 @@
+{% schema %}
+    {
+      "name": "Mapbox Map",
+      "settings": [
+        {
+          "type": "text",
+          "id": "mapbox_api_key",
+          "label": "Mapbox API Key",
+          "info": "Enter your Mapbox API key"
+        },
+        {
+          "type": "text",
+          "id": "map_latitude",
+          "label": "Default Latitude",
+          "default": "40.7128"
+        },
+        {
+          "type": "text",
+          "id": "map_longitude",
+          "label": "Default Longitude",
+          "default": "-74.0060"
+        },
+        {
+          "type": "text",
+          "id": "map_zoom",
+          "label": "Map Zoom Level",
+          "default": "12"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Mapbox Map",
+          "category": "Custom"
+        }
+      ]
+    }
+    {% endschema %}
+    
+    <div id="map" style="width: 100%; height: 400px;"></div>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var mapboxApiKey = "{{ section.settings.mapbox_api_key }}";
+        var lat = parseFloat("{{ section.settings.map_latitude }}");
+        var lng = parseFloat("{{ section.settings.map_longitude }}");
+        var zoomLevel = parseInt("{{ section.settings.map_zoom }}");
+    
+        if (mapboxApiKey) {
+            var script = document.createElement("script");
+            script.src = "https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js";
+            script.onload = function () {
+                mapboxgl.accessToken = mapboxApiKey;
+                var map = new mapboxgl.Map({
+                    container: "map",
+                    style: "mapbox://styles/mapbox/streets-v11",
+                    center: [lng, lat],
+                    zoom: zoomLevel
+                });
+    
+                new mapboxgl.Marker().setLngLat([lng, lat]).addTo(map);
+            };
+            document.body.appendChild(script);
+        } else {
+            console.error("Mapbox API key is missing!");
+        }
+    });
+    </script>
+    
+    <style>
+    @import url('https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css');
+    #map {
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    </style>

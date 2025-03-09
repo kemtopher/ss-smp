@@ -1,0 +1,78 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "t:sections.header-group.name",
+  "sections": {
+    "announcement": {
+      "type": "announcement",
+      "blocks": {
+        "announcement-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Sell on Ship My Plants -",
+            "link_text": "Learn More",
+            "link": "https://www.shipmyplants.com/why-sell-on-ship-my-plants/"
+          }
+        },
+        "announcement-1": {
+          "type": "announcement",
+          "settings": {
+            "text": "Earth's Most People & Plant Friendly Marketplace",
+            "link_text": "",
+            "link": "https://www.shipmyplants.com/about-us/"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-0",
+        "announcement-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "announcement_compact": true
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "header-0": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Ship_My_Plants_-_Full_Color_Long.png",
+            "desktop_logo_width": 320,
+            "mobile_logo_width": 160
+          }
+        }
+      },
+      "block_order": [
+        "header-0"
+      ],
+      "settings": {
+        "main_menu_link_list": "main-menu",
+        "hover_menu": true,
+        "mega_menu_images": false,
+        "main_menu_alignment": "center",
+        "header_style": "sticky",
+        "sticky_index": false,
+        "sticky_collection": false,
+        "toolbar_menu": "",
+        "toolbar_social": false,
+        "show_locale_selector": true,
+        "show_currency_selector": true,
+        "show_currency_flags": true
+      }
+    }
+  },
+  "order": [
+    "announcement",
+    "header"
+  ]
+}
