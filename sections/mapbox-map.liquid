@@ -56,21 +56,27 @@
             }
         };
 
-        const fetchStoreLonLat = async () => {
+        const fetchStoreLonLat = async (fieldText) => {
             try {
-                // search mapbox for location
-                // retrieve the lon, lat
+                const res = await fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${fieldText}.json?access_token=pk.eyJ1IjoiYXF1YXllIiwiYSI6ImNrN3NjdTdmczBkZmQzZnIyenZ1djR1dXkifQ.chRGR88GhxPG1Yk-2DDzqw`);
 
-                // return lon, lat
+                if (!res.ok) {
+                    throw new Error(`Failed to fetch: ${res.status}`);
+                }
+
+                const data = await res.json();
+                console.log("Local Data: ", data);
+
+                return data;
             } catch (error) {
                 console.log("Error finding location. See error: ", error);
-                return;
+                return[];
             }
         } 
 
         const mapboxApiKey = "{{ section.settings.mapbox_api_key }}";
         const lat = parseFloat("{{ section.settings.map_latitude }}");
-        const lng = parseFloat("{{ section.settings.map_longitude }}");
+        const lon = parseFloat("{{ section.settings.map_longitude }}");
         const zoomLevel = parseInt("{{ section.settings.map_zoom }}", 10);
 
         if (!mapboxApiKey) {
@@ -85,7 +91,7 @@
             const map = new mapboxgl.Map({
                 container: "map",
                 style: "mapbox://styles/mapbox/streets-v11",
-                center: [lng, lat],
+                center: [lon, lat],
                 zoom: zoomLevel
             });
 
@@ -94,7 +100,8 @@
 
                 const storeNames = sellers.map(seller => seller);
                 storeNames.forEach(store => {
-                    console.log("Store Location: ", `${store.city}, ${store.state}`)
+                    const storeInfo = fetchStoreLonLat(`${store.city}, ${store.state}`);
+                    console.log("Store Location: ", storeInfo);
                 })
                 // console.log("Inside function: ", storeNames); 
             })();
