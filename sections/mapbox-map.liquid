@@ -41,24 +41,30 @@
     <script>
     document.addEventListener("DOMContentLoaded", () => {
 
-        const sellers = async () => {
-            const url = "https://cdn.shopify.com/s/files/1/0723/2474/3380/files/sellers.json?v=1741544199";
-            
+        const fetchSellers = async () => {
             try {
-                const res = await fetch(url);
-                
+                const res = await fetch("https://cdn.shopify.com/s/files/1/0723/2474/3380/files/sellers.json?v=1741544199");
+
                 if (!res.ok) {
-                    throw new Error(`Res status: ${res.status}`);
+                    throw new Error(`Failed to fetch: ${res.status}`);
                 }
 
-                const data = await res.json();
-                return data;
+                return await res.json();
             } catch (error) {
-                console.error(error.message);
+                console.error("Error fetching sellers:", error);
+                return [];
             }
-        }
+        };
 
-        console.log("Sellers List: ", sellers);
+        (async () => {
+            const sellers = await fetchSellers();
+
+            const storeNames = sellers.map(seller => seller);
+            console.log(storeNames); 
+        })();
+
+        
+
         const mapboxApiKey = "{{ section.settings.mapbox_api_key }}";
         const lat = parseFloat("{{ section.settings.map_latitude }}");
         const lng = parseFloat("{{ section.settings.map_longitude }}");
