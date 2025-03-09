@@ -56,15 +56,6 @@
             }
         };
 
-        (async () => {
-            const sellers = await fetchSellers();
-
-            const storeNames = sellers.map(seller => seller);
-            console.log(storeNames); 
-        })();
-
-        
-
         const mapboxApiKey = "{{ section.settings.mapbox_api_key }}";
         const lat = parseFloat("{{ section.settings.map_latitude }}");
         const lng = parseFloat("{{ section.settings.map_longitude }}");
@@ -86,6 +77,12 @@
                 zoom: zoomLevel
             });
 
+            (async () => {
+                const sellers = await fetchSellers();
+
+                const storeNames = sellers.map(seller => seller);
+                console.log("Inside function: ", storeNames); 
+            })();
             new mapboxgl.Marker().setLngLat([lng, lat]).addTo(map);
         };
 
