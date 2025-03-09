@@ -100,12 +100,14 @@
 
                 const storeNames = sellers.map(seller => seller);
                 storeNames.forEach(store => {
-                    const storeInfo = fetchStoreLonLat(`${store.city}, ${store.state}`);
+                    const storeInfo = async () => {
+                        return await fetchStoreLonLat(`${store.city}, ${store.state}`);
+                    }
                     console.log("Store Location: ", storeInfo);
                 })
                 // console.log("Inside function: ", storeNames); 
             })();
-            new mapboxgl.Marker().setLngLat([lng, lat]).addTo(map);
+            // new mapboxgl.Marker().setLngLat([lng, lat]).addTo(map);
         };
 
         document.body.appendChild(script);
