@@ -606,6 +606,15 @@
         "border_thickness": 0,
         "lazy": true
       }
+    },
+    "mapbox_map_MQCCMa": {
+      "type": "mapbox-map",
+      "settings": {
+        "mapbox_api_key": "pk.eyJ1IjoiY2tlbWV6YTEiLCJhIjoiY204MTR0OTJkMGZtMjJqb2Q5cWQwOHVhcSJ9.LpvISa5nJ-qDl8XypwUVkw",
+        "map_latitude": "40.7128",
+        "map_longitude": "-74.0060",
+        "map_zoom": "12"
+      }
     }
   },
   "order": [
@@ -617,6 +626,7 @@
     "ss_featured_collection_XHwFKK",
     "ss_featured_collection_FVjGEh",
     "blog_posts_B8E8j6",
-    "ss_scrolling_logo_cloud_qCa8fw"
+    "ss_scrolling_logo_cloud_qCa8fw",
+    "mapbox_map_MQCCMa"
   ]
 }
