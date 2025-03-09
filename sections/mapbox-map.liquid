@@ -103,7 +103,7 @@
                     const storeInfo = (async () => {
                         return await fetchStoreLonLat(`${store.city}, ${store.state}`);
                     })();
-                    console.log("Store Location: ", storeInfo);
+                    console.log("Store Location: ", storeInfo());
                 })
                 // console.log("Inside function: ", storeNames); 
             })();
