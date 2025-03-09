@@ -39,30 +39,51 @@
     <div id="map" style="width: 100%; height: 400px;"></div>
     
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var mapboxApiKey = "{{ section.settings.mapbox_api_key }}";
-        var lat = parseFloat("{{ section.settings.map_latitude }}");
-        var lng = parseFloat("{{ section.settings.map_longitude }}");
-        var zoomLevel = parseInt("{{ section.settings.map_zoom }}");
-    
-        if (mapboxApiKey) {
-            var script = document.createElement("script");
-            script.src = "https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js";
-            script.onload = function () {
-                mapboxgl.accessToken = mapboxApiKey;
-                var map = new mapboxgl.Map({
-                    container: "map",
-                    style: "mapbox://styles/mapbox/streets-v11",
-                    center: [lng, lat],
-                    zoom: zoomLevel
-                });
-    
-                new mapboxgl.Marker().setLngLat([lng, lat]).addTo(map);
-            };
-            document.body.appendChild(script);
-        } else {
-            console.error("Mapbox API key is missing!");
+    document.addEventListener("DOMContentLoaded", () => {
+
+        const sellers = async () => {
+            const url = "https://cdn.shopify.com/s/files/1/0723/2474/3380/files/sellers.json?v=1741544199";
+            
+            try {
+                const res = await fetch(url);
+                
+                if (!res.ok) {
+                    throw new Error(`Res status: ${res.status}`);
+                }
+
+                const data = await res.json();
+                return data;
+            } catch (error) {
+                console.error(error.message);
+            }
         }
+
+        console.log("Sellers List: ", sellers);
+        const mapboxApiKey = "{{ section.settings.mapbox_api_key }}";
+        const lat = parseFloat("{{ section.settings.map_latitude }}");
+        const lng = parseFloat("{{ section.settings.map_longitude }}");
+        const zoomLevel = parseInt("{{ section.settings.map_zoom }}", 10);
+
+        if (!mapboxApiKey) {
+            console.error("Mapbox API key is missing!");
+            return;
+        }
+
+        const script = document.createElement("script");
+        script.src = "https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js";
+        script.onload = () => {
+            mapboxgl.accessToken = mapboxApiKey;
+            const map = new mapboxgl.Map({
+                container: "map",
+                style: "mapbox://styles/mapbox/streets-v11",
+                center: [lng, lat],
+                zoom: zoomLevel
+            });
+
+            new mapboxgl.Marker().setLngLat([lng, lat]).addTo(map);
+        };
+
+        document.body.appendChild(script);
     });
     </script>
     
