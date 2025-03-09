@@ -43,7 +43,7 @@
 
         const fetchSellers = async () => {
             try {
-                const res = await fetch("https://cdn.shopify.com/s/files/1/0723/2474/3380/files/sellers.json?v=1741544199");
+                const res = await fetch("https://cdn.shopify.com/s/files/1/0723/2474/3380/files/sellers_cleaned.json?v=1741544199");
 
                 if (!res.ok) {
                     throw new Error(`Failed to fetch: ${res.status}`);
