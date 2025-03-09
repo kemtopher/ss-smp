@@ -41,7 +41,7 @@
     <script>
     document.addEventListener("DOMContentLoaded", () => {
 
-        const fetchSellers = async () => {
+        const fetchStoreData = async () => {
             try {
                 const res = await fetch("https://cdn.shopify.com/s/files/1/0723/2474/3380/files/sellers_cleaned.json?v=1741544199");
 
@@ -55,6 +55,18 @@
                 return [];
             }
         };
+
+        const fetchStoreLonLat = async () => {
+            try {
+                // search mapbox for location
+                // retrieve the lon, lat
+
+                // return lon, lat
+            } catch (error) {
+                console.log("Error finding location. See error: ", error);
+                return;
+            }
+        } 
 
         const mapboxApiKey = "{{ section.settings.mapbox_api_key }}";
         const lat = parseFloat("{{ section.settings.map_latitude }}");
@@ -78,10 +90,13 @@
             });
 
             (async () => {
-                const sellers = await fetchSellers();
+                const sellers = await fetchStoreData();
 
                 const storeNames = sellers.map(seller => seller);
-                console.log("Inside function: ", storeNames); 
+                storeNames.forEach(store => {
+                    console.log("Store Location: ", `${city}, ${state}`)
+                })
+                // console.log("Inside function: ", storeNames); 
             })();
             new mapboxgl.Marker().setLngLat([lng, lat]).addTo(map);
         };
@@ -97,3 +112,5 @@
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     }
     </style>
+
+  
