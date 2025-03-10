@@ -56,22 +56,6 @@
             }
         };
 
-        // const fetchStoreLonLat = async (fieldText) => {
-        //     try {
-        //         const res = await fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${fieldText}.json?access_token=pk.eyJ1IjoiYXF1YXllIiwiYSI6ImNrN3NjdTdmczBkZmQzZnIyenZ1djR1dXkifQ.chRGR88GhxPG1Yk-2DDzqw`);
-
-        //         if (!res.ok) {
-        //             throw new Error(`Failed to fetch: ${res.status}`);
-        //         }
-        //         const data = await res.json();
-
-        //         return data;
-        //     } catch (error) {
-        //         console.log("Error finding location. See error: ", error);
-        //         return[];
-        //     }
-        // } 
-
         const fetchStoreLonLat = async (fieldText) => {
             try {
                 const res = await fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${fieldText}.json?access_token=pk.eyJ1IjoiYXF1YXllIiwiYSI6ImNrN3NjdTdmczBkZmQzZnIyenZ1djR1dXkifQ.chRGR88GhxPG1Yk-2DDzqw`);
@@ -82,8 +66,8 @@
 
                 const data = await res.json();
                 const lonLat = {
-                    lat: data.features[0].center[0],
-                    lon: data.features[0].center[1]
+                    lng: data.features[0].center[0],
+                    lat: data.features[0].center[1]
                 };
                 
                 return lonLat;
@@ -95,7 +79,7 @@
 
         const mapboxApiKey = "{{ section.settings.mapbox_api_key }}";
         const lat = parseFloat("{{ section.settings.map_latitude }}");
-        const lon = parseFloat("{{ section.settings.map_longitude }}");
+        const lng = parseFloat("{{ section.settings.map_longitude }}");
         const zoomLevel = parseInt("{{ section.settings.map_zoom }}", 10);
 
         if (!mapboxApiKey) {
@@ -110,7 +94,7 @@
             const map = new mapboxgl.Map({
                 container: "map",
                 style: "mapbox://styles/mapbox/streets-v11",
-                center: [lon, lat],
+                center: [lng, lat],
                 zoom: 22,
                 cooperativeGestures: true
             });
@@ -127,30 +111,90 @@
                 showUserHeading: true
             });
 
-            map.on('load', function() {
+            map.on('load', () => {
                 geolocate.trigger();
             });
 
             map.addControl(nav, 'top-left');
             map.addControl(geolocate, 'top-left'); 
 
+            // (async () => {
+            //     const sellers = await fetchStoreData();
+            //     const storeNames = sellers.map(seller => seller);
+
+            //     storeNames.forEach(store => {
+            //         // check to see if the object has the necessary data to complete request
+            //         if (store.city === null || store.state === null) {
+            //             return;
+            //         } else {
+            //             const popUpContent = '<strong>Truckeroo</strong><p><a href="http://www.truckeroodc.com/www/" target="_blank">Truckeroo</a> brings dozens of food trucks, live music, and games to half and M Street SE (across from Navy Yard Metro Station) today from 11:00 a.m. to 11:00 p.m.</p>';
+
+            //             (async () => {
+            //                 const location = await fetchStoreLonLat(`${store.city}, ${store.state}`);
+
+            //                 new mapboxgl.Marker().setLngLat([location.lng, location.lat]).addTo(map);
+
+            //                 new mapboxgl.Popup()
+            //                     .setLngLat([location.lng, location.lat])
+            //                     .setHTML(popUpContent)
+            //                     .addTo(map);
+            //             })();
+            //         }
+            //     })
+            // })();
             (async () => {
                 const sellers = await fetchStoreData();
                 const storeNames = sellers.map(seller => seller);
 
-                storeNames.forEach(store => {
-                    // check to see if the object has the necessary data to complete request
-                    if (store.city === null || store.state === null) {
-                        return;
-                    } else {
-                        (async () => {
-                            const location = await fetchStoreLonLat(`${store.city}, ${store.state}`);
+                let activePopup = null; // Track the currently open popup
 
-                            new mapboxgl.Marker().setLngLat([location.lat, location.lon]).addTo(map);
-                        })();
+                storeNames.forEach(store => {
+                    // Check if store has required location data
+                    if (!store.city || !store.state) {
+                        return;
                     }
-                })
+
+                    const popUpContent = `
+                        <strong>${store.name || "Unknown Store"}</strong>
+                        <p>Location: ${store.city}, ${store.state}</p>
+                        <a href="http://www.truckeroodc.com/www/" target="_blank">Visit Website</a>
+                    `;
+
+                    (async () => {
+                        const location = await fetchStoreLonLat(`${store.city}, ${store.state}`);
+
+                        const marker = new mapboxgl.Marker()
+                            .setLngLat([location.lng, location.lat])
+                            .addTo(map);
+
+                        const popup = new mapboxgl.Popup({
+                            // closeOnClick: false
+                        }).setHTML(popUpContent);
+
+                        // not adding marker to map or not making active
+                        // marker.getElement().addEventListener("click", (e) => {
+                        //     // second click closes popup
+                        //     console.log(activePopup)
+                        //     if (activePopup === popup) {
+                        //         console.log("no longer active")
+                        //         popup.remove();
+                        //         activePopup = null;
+                        //     } else {
+                        //         console.log("new active popup");
+
+                        //         if (activePopup) {
+                        //             activePopup.remove();
+                        //         }
+
+                        //         popup.addTo(map);
+                        //         activePopup = popup;
+                        //         console.log(activePopup)
+                        //     }
+                        // });
+                    })();
+                });
             })();
+
         };
 
         document.body.appendChild(script);
@@ -162,6 +206,15 @@
     #map {
         border-radius: 10px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .mapboxgl-popup {
+        max-width: 400px;
+        font:
+            12px/20px 'Helvetica Neue',
+            Arial,
+            Helvetica,
+            sans-serif;
     }
     </style>
 
