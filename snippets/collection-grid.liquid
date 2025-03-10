@@ -91,14 +91,13 @@ Snippet Arguments
   // woo_importer_product-hardiness_zone_rating-zone-4
 
   const useHardinessZone = async (zip) => {
-      const storedData = sessionStorage.getItem("hardinessZoneData");
+      const storedData = sessionStorage.getItem("customer_data");
 
       if (storedData) {
           const parsedData = JSON.parse(storedData);
           const now = new Date();
           
-          // Check if data is still valid and matches the input ZIP
-          if (new Date(parsedData.expire_date) > now && parsedData.zip_code === zip) {
+          if (new Date(parsedData.expire_date) > now) {
               console.log("Using cached hardiness zone data:", parsedData);
               return parsedData;
           }
@@ -128,14 +127,14 @@ Snippet Arguments
           const expireDate = new Date();
           expireDate.setHours(expireDate.getHours() + 24);
 
-          // Store new data in sessionStorage
+          // Store data in sessionStorage
           const storageData = {
               expire_date: expireDate.toISOString(),
               zip_code: zip,
               hardiness_zone: zone
           };
 
-          sessionStorage.setItem("hardinessZoneData", JSON.stringify(storageData));
+          sessionStorage.setItem("customer_data", JSON.stringify(storageData));
 
           console.log("Fetched new hardiness zone data:", storageData);
           return storageData;
@@ -158,6 +157,8 @@ Snippet Arguments
     // Check if the key already exists in the pathname
     if (!path.includes(filterKey)) {
         // Append filterKey ensuring it's separated by "+"
+        // MAKE SURE PATH DOES NOT START WITH +
+        // start with /
         path = path.endsWith("/") ? path + `woo_importer_product-hardiness_zone_rating-zone-${filterKey}` : path + "+" + `woo_importer_product-hardiness_zone_rating-zone-${filterKey}`;
     }
 
