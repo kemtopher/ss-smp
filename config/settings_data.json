@@ -81,6 +81,7 @@
     "pt_sticky_enable": true,
     "pt_ajax_enable": true,
     "pt_filter_padding": 6,
+    "pt_temporary_disable": true,
     "breadcrumb": false,
     "checkout_accent_color": "#111111",
     "checkout_body_background_color": "#ffffff",
