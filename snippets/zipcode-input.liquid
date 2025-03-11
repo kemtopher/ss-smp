@@ -118,6 +118,15 @@
             }
         };
 
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     const element = document.querySelector('[data-filter-name="Hardiness Zone"]');
+        //     if (element) {
+        //         console.log("Element found!");
+        //     } else {
+        //         console.log("Element not found!");
+        //     }
+        // });
+
         zipInput.addEventListener("keydown", () => {
             const zip = zipInput.value.trim();
             if (validateZip(zip) && event.key === 'Enter') {
@@ -126,7 +135,8 @@
                     sessionStorage.setItem("hardiness_zone_data", JSON.stringify(customerData));
                     zoneSpan.textContent = customerData.zoneNumber;
                     zoneText.classList.remove("hidden");
-                })
+                });
+                window.location.reload();
             }
         })
 
@@ -137,7 +147,28 @@
             // submitBtn.disabled = true;
             zoneText.classList.add("hidden");
             sessionStorage.removeItem("hardiness_zone_data");
+            sessionStorage.removeItem("filter_closed");
+            window.location.reload();
         });
+
+        
+        
+        
+
+        setTimeout(() => {
+            const clicker = document.querySelector('.cloud-search-applied-filter__clear');
+
+            // Check if the element exists before adding the event listener
+            if (clicker) {
+                clicker.addEventListener("click", () => {
+                    // sessionStorage.setItem("filter_closed", "true");
+                    sessionStorage.removeItem("filter_closed");
+                    sessionStorage.removeItem("hardiness_zone_data");
+                });
+            } else {
+                console.log("Element not found");
+            }
+        }, 1000);
 
         // removed geoBtn for now
         // geoBtn.addEventListener("click", () => {

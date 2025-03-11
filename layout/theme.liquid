@@ -97,6 +97,7 @@
   {% endif %}
 {% render 'filter-menu-settings' %}
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %}" data-center-text="{{ settings.type_body_align_text }}" data-button_style="{{ settings.button_style }}" data-type_header_capitalize="{{ settings.type_header_capitalize }}" data-type_headers_align_text="{{ settings.type_headers_align_text }}" data-type_product_capitalize="{{ settings.type_product_capitalize }}" data-swatch_style="{{ settings.swatch_style }}" {% if settings.disable_animations %}data-disable-animations="true"{% endif %}>
@@ -139,5 +140,46 @@
       </image-element>
     </div>
   </template>
+
+  {% if template contains 'collection' %}
+    <script>
+        (() => {
+            // Check if the filter_hardiness_zone param is already in the URL to prevent a loop
+            const url = new URL(window.location.href);
+            if (url.searchParams.has("filter_hardiness_zone")) {
+                return;
+            }
+
+            const hardinessZoneData = sessionStorage.getItem("hardiness_zone_data");
+            if (hardinessZoneData) {
+                try {
+                    const { zoneNumber } = JSON.parse(hardinessZoneData);
+    
+                    if (zoneNumber !== null && zoneNumber !== undefined) {
+                        const paramName = "filter_hardiness_zone";
+                        const paramValue = `Zone+${zoneNumber}`;
+                        
+                        // replace `/collections/` with `/a/search/`
+                        const newPath = url.pathname.replace(/^\/collections\//, "/a/search/");
+    
+                        // Ensure the path transformation was successful
+                        if (!newPath.startsWith("/a/search/")) {
+                            console.error("Failed to transform URL path correctly.");
+                            return;
+                        }
+    
+                        const queryString = url.searchParams.toString();
+                        const newUrl = `${window.location.origin}${newPath}${queryString ? `?${queryString}&` : "?"}${paramName}=${paramValue}`;
+    
+                        // Redirect to the updated URL
+                        window.location.replace(newUrl);
+                    }
+                } catch (error) {
+                    console.error("Invalid hardiness_zone_data in sessionStorage", error);
+                }
+            }
+        })();
+    </script>
+    {% endif %}
 </body>
 </html>
