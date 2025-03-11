@@ -42,7 +42,13 @@
     .error {
         color: red;
         font-size: 0.875rem;
-        margin-top: 4px;
+        margin-top: 6px;
+        margin-bottom: 0;
+    }
+    #zone-text {
+        color: #6a9045;
+        font-size: 0.875rem;
+        margin-bottom: 6px;
     }
     .hidden {
         display: none;
@@ -91,6 +97,8 @@
         const savedData = JSON.parse(sessionStorage.getItem("hardiness_zone_data"));
         if (savedData?.zipCode) {
             zipInput.value = savedData.zipCode;
+            zoneSpan.textContent = savedData.zoneNumber;
+            zoneText.classList.remove("hidden");
             handleValidation();
         }
 
@@ -129,14 +137,18 @@
 
         zipInput.addEventListener("keydown", () => {
             const zip = zipInput.value.trim();
+
             if (validateZip(zip) && event.key === 'Enter') {
                 fetchHardinessData(zip).then(hardinessData => {
                     const customerData = { zipCode: zip, hardinessData: hardinessData, zoneNumber: stripNonNumbers(hardinessData.zone) };
                     sessionStorage.setItem("hardiness_zone_data", JSON.stringify(customerData));
+
                     zoneSpan.textContent = customerData.zoneNumber;
                     zoneText.classList.remove("hidden");
                 });
                 window.location.reload();
+            } else if (!validation(zip)) {
+                zoneText.classList.add("hidden");
             }
         })
 
