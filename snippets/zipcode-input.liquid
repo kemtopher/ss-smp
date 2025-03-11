@@ -1,0 +1,180 @@
+{% comment %} Shopify Snippet: Zip Code Input {% endcomment %}
+<div class="zip-container">
+    <p id="zone-text" class="hidden">Your hardiness zone is <span id="zone"></span></p>
+    <div class="input-wrapper">
+        <input type="text" id="zip-input" placeholder="Enter ZIP code" aria-describedby="error-message" maxlength="5">
+        <button class="close" id="clear-btn">&#10006;</button>
+        {% comment %} <button class="geo" id="geo-btn">📍</button> {% endcomment %}
+    </div>
+    <p id="error-message" class="error hidden"></p>
+    {% comment %} <button id="submit-btn" disabled>Submit</button> {% endcomment %}
+</div>
+
+<style>
+    .zip-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+    }
+    .input-wrapper {
+        display: flex;
+        align-items: center;
+        max-height: 3.125rem;
+        border: 1px solid black;
+        background-color: white;
+    }
+    input[type="text"] {
+        flex: 1;
+        border: none;
+        padding: 8px;
+        font-size: 1rem;
+    }
+    .close, .geo {
+        width: 40px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-left: 1px solid black;
+        background: white;
+    }
+    .error {
+        color: red;
+        font-size: 0.875rem;
+        margin-top: 4px;
+    }
+    .hidden {
+        display: none;
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const zipInput = document.getElementById("zip-input");
+        const errorMessage = document.getElementById("error-message");
+        // const submitBtn = document.getElementById("submit-btn");
+        const clearBtn = document.getElementById("clear-btn");
+        // const geoBtn = document.getElementById("geo-btn");
+        const zoneText = document.getElementById("zone-text");
+        const zoneSpan = document.getElementById("zone");
+        let debounceTimer;
+        let lastValidationMessage = "";
+
+        const validateZip = (zip) => /^[0-9]{5}$/.test(zip);
+
+        const handleValidation = () => {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(() => {
+                const zip = zipInput.value.trim();
+                if (!zip) {
+                    errorMessage.textContent = "";
+                    errorMessage.classList.add("hidden");
+                    // submitBtn.disabled = true;
+                    return;
+                }
+                if (!validateZip(zip)) {
+                    lastValidationMessage = "Please enter a valid 5-digit US ZIP code.";
+                    errorMessage.textContent = lastValidationMessage;
+                    errorMessage.classList.remove("hidden");
+                    // submitBtn.disabled = true;
+                } else {
+                    errorMessage.textContent = "";
+                    errorMessage.classList.add("hidden");
+                    // submitBtn.disabled = false;
+                }
+            }, 500);
+        };
+
+        zipInput.addEventListener("input", handleValidation);
+
+        const savedData = JSON.parse(sessionStorage.getItem("hardiness_zone_data"));
+        if (savedData?.zipCode) {
+            zipInput.value = savedData.zipCode;
+            handleValidation();
+        }
+
+        // hiding submitBtn for now
+        // submitBtn.addEventListener("click", () => {
+        //     const zip = zipInput.value.trim();
+        //     if (validateZip(zip)) {
+        //         const customerData = { zipCode: zip, hardinessZone: null, location: { lat: null, lng: null } };
+        //         sessionStorage.setItem("hardiness_zone_data", JSON.stringify(customerData));
+        //     }
+        // });
+
+        const stripNonNumbers = (str) => {
+            return str.replace(/[^0-9]/g, '');
+        }
+
+        const fetchHardinessData = async (zip) => {
+            try {
+                const response = await fetch(`https://phzmapi.org/${zip}.json`);
+                const hardinessData = await response.json();
+
+                return hardinessData;
+            } catch {
+                return "Unknown";
+            }
+        };
+
+        zipInput.addEventListener("keydown", () => {
+            const zip = zipInput.value.trim();
+            if (validateZip(zip) && event.key === 'Enter') {
+                fetchHardinessData(zip).then(hardinessData => {
+                    const customerData = { zipCode: zip, hardinessData: hardinessData, zoneNumber: stripNonNumbers(hardinessData.zone) };
+                    sessionStorage.setItem("hardiness_zone_data", JSON.stringify(customerData));
+                    zoneSpan.textContent = customerData.zoneNumber;
+                    zoneText.classList.remove("hidden");
+                })
+            }
+        })
+
+        clearBtn.addEventListener("click", () => {
+            zipInput.value = "";
+            errorMessage.textContent = "";
+            errorMessage.classList.add("hidden");
+            // submitBtn.disabled = true;
+            zoneText.classList.add("hidden");
+            sessionStorage.removeItem("hardiness_zone_data");
+        });
+
+        // removed geoBtn for now
+        // geoBtn.addEventListener("click", () => {
+        //     if (navigator.geolocation) {
+        //         navigator.geolocation.getCurrentPosition(async ({ coords: { latitude, longitude } }) => {
+        //             try {
+        //                 const response = await fetch(`https://api.zippopotam.us/us/${latitude},${longitude}`);
+        //                 const { postalCodes } = await response.json();
+        //                 const zip = postalCodes[0].postalCode;
+        //                 zipInput.value = zip;
+        //                 handleValidation();
+
+        //                 const hardinessZone = await fetchHardinessData(zip);
+        //                 zoneSpan.textContent = hardinessZone;
+        //                 zoneText.classList.remove("hidden");
+
+        //                 const customerData = { zipCode: zip, hardinessZone, location: { lat: latitude, lng: longitude } };
+        //                 sessionStorage.setItem("hardiness_zone_data", JSON.stringify(customerData));
+
+        //                 // submitBtn.disabled = false;
+        //                 // submitBtn.click();
+        //             } catch {
+        //                 showTemporaryGeoError("Unable to fetch ZIP code.");
+        //             }
+        //         }, () => showTemporaryGeoError("Geolocation permission denied."));
+        //     }
+        // });
+
+        // const showTemporaryGeoError = (message) => {
+        //     if (errorMessage.textContent) {
+        //         const previousMessage = errorMessage.textContent;
+        //         errorMessage.textContent = message;
+        //         setTimeout(() => errorMessage.textContent = previousMessage, 3000);
+        //     } else {
+        //         errorMessage.textContent = message;
+        //         errorMessage.classList.remove("hidden");
+        //     }
+        // };
+    });
+</script>

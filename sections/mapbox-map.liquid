@@ -146,7 +146,8 @@
                 const sellers = await fetchStoreData();
                 const storeNames = sellers.map(seller => seller);
 
-                let activePopup = null; // Track the currently open popup
+                // Track the currently open popup
+                let activePopup = null;
 
                 storeNames.forEach(store => {
                     // Check if store has required location data
